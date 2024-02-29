@@ -4,7 +4,6 @@ import 'package:ecommerce_website/app/constants/cards/banner_card.dart';
 import 'package:ecommerce_website/app/constants/constants.dart';
 import 'package:ecommerce_website/app/constants/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 

@@ -21,7 +21,7 @@ dependencies:
   firebase_core: ^2.25.4
   firebase_core_platform_interface: ^5.0.0
   flutter_svg:
-  scroll_to_hide: ^2.1.0
+  # scroll_to_hide: ^2.1.0
   tab_indicator_styler: ^2.0.0
   carousel_slider:
   font_awesome_flutter: ^10.7.0

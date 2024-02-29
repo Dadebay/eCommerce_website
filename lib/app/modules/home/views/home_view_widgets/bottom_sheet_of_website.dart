@@ -12,7 +12,6 @@ class BottomSheetOfWebsite extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(screenWidth);
     return Container(
       color: Colors.grey.shade100,
       padding: EdgeInsets.only(top: 35.h, bottom: 10.h, left: 20.w, right: 20.w),

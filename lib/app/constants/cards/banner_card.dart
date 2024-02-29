@@ -2,7 +2,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ecommerce_website/app/constants/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
 
 class BannerCard extends StatelessWidget {
   final String image;

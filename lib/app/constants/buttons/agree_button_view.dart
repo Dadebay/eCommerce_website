@@ -12,10 +12,10 @@ class AgreeButton extends StatelessWidget {
 
   const AgreeButton({
     required this.onTap,
-    Key? key,
+    super.key,
     required this.name,
     required this.style,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

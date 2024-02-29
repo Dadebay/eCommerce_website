@@ -7,37 +7,40 @@ import 'package:ecommerce_website/app/constants/widgets/widgets.dart';
 import 'package:ecommerce_website/app/modules/home/views/home_view_widgets/banners.dart';
 import 'package:ecommerce_website/app/modules/home/views/home_view_widgets/bottom_sheet_of_website.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_social_button/flutter_social_button.dart';
 import 'package:get/get.dart';
-import 'package:iconly/iconly.dart';
 
 class TabbarPage1 extends StatelessWidget {
   final List<QueryDocumentSnapshot<Object?>> snapshot;
   final List<QueryDocumentSnapshot<Object?>> instagramImages;
-  const TabbarPage1({super.key, required this.snapshot, required this.crossAxisCount, required this.fontSizeCustom, required this.itemCountCustom, required this.instagramImages});
+  const TabbarPage1(
+      {super.key, required this.snapshot, required this.crossAxisCount, required this.fontSizeCustom, required this.itemCountCustom, required this.instagramImages, required this.screenWidth});
   final int crossAxisCount;
   final int fontSizeCustom;
   final double itemCountCustom;
+  final double screenWidth;
   @override
   Widget build(BuildContext context) {
-    return Wrap(
-      crossAxisAlignment: WrapCrossAlignment.center,
-      alignment: WrapAlignment.center,
-      children: <Widget>[
-        const Banners(),
-        gradientCard(),
-        Padding(
-          padding: EdgeInsets.only(top: 25.h, bottom: 25.h),
-          child: Text(
-            'Popular products',
-            style: TextStyle(color: Colors.black, fontFamily: gilroyBold, fontSize: fontSizeCustom + 6.sp),
+    return SingleChildScrollView(
+      physics: const BouncingScrollPhysics(),
+      child: Wrap(
+        crossAxisAlignment: WrapCrossAlignment.center,
+        alignment: WrapAlignment.center,
+        children: <Widget>[
+          const Banners(),
+          gradientCard(),
+          Padding(
+            padding: EdgeInsets.only(top: 25.h, bottom: 25.h),
+            child: Text(
+              'Popular products',
+              style: TextStyle(color: Colors.black, fontFamily: gilroyBold, fontSize: fontSizeCustom + 6.sp),
+            ),
           ),
-        ),
-        gridView(crossAxisCount, fontSizeCustom, itemCountCustom),
-        instagramshop(),
-      ],
+          gridView(crossAxisCount, fontSizeCustom, itemCountCustom),
+          instagramshop(),
+          BottomSheetOfWebsite(fontSizeCustom: fontSizeCustom, screenWidth: screenWidth)
+        ],
+      ),
     );
   }
 
@@ -80,7 +83,7 @@ class TabbarPage1 extends StatelessWidget {
                     physics: const NeverScrollableScrollPhysics(),
                     itemBuilder: (BuildContext context, int index) {
                       return Container(
-                        width: 50.w,
+                        width: 50.w + fontSizeCustom.w,
                         margin: EdgeInsets.symmetric(vertical: 15.h, horizontal: 5.w),
                         decoration: BoxDecoration(
                           color: Colors.grey.shade200,
