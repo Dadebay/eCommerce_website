@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 
-const Color kPrimaryColor = Color(0xff8909f5);
-const Color kPrimaryColor2 = Color(0xff3d0072);
-const Color kSecondColor = Color(0xff2596be);
+const Color kPrimaryColor = Colors.amber;
+const Color kPrimaryColor2 = Colors.black;
 const Color backgroundColor = Color(0xfff2f2f2);
-const Color kBlackColor = Color(0xff2b2b2b);
 
 ///BorderRadius
 const BorderRadius borderRadius5 = BorderRadius.all(Radius.circular(5));
@@ -22,6 +20,7 @@ const String gilroyMedium = 'GilroyMedium';
 const String gilroyRegular = 'GilroyRegular';
 //Others
 const String logo = 'assets/image/logo.png';
+const String logo2 = 'assets/image/logo2.png';
 const String appName = 'BEGLER DISTRIBUTION';
 const String loremImpsum =
     'Lorem ipsum, yaygın olarak kullanılan bir yer tutucu metne verilen isimdir. Dolgu veya sahte metin olarak da bilinen bu tip yer tutucu metinler, aslında anlamlı bir şey söylemeden bir alanı doldurmaya yarayan metinlerdir,Lorem ipsum, yaygın olarak kullanılan bir yer tutucu metne verilen isimdir. Dolgu veya sahte metin olarak da bilinen bu tip yer tutucu metinler, aslında anlamlı bir şey söylemeden bir alanı doldurmaya yarayan metinlerdir,Lorem ipsum, yaygın olarak kullanılan bir yer tutucu metne verilen isimdir. Dolgu veya sahte metin olarak da bilinen bu tip yer tutucu metinler, aslında anlamlı bir şey söylemeden bir alanı doldurmaya yarayan metinlerdir,Lorem ipsum, yaygın olarak kullanılan bir yer tutucu metne verilen isimdir. Dolgu veya sahte metin olarak da bilinen bu tip yer tutucu metinler, aslında anlamlı bir şey söylemeden bir alanı doldurmaya yarayan metinlerdir';

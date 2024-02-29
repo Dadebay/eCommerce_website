@@ -34,10 +34,12 @@ class CustomTextField extends StatelessWidget {
         style: const TextStyle(color: Colors.black, fontFamily: gilroyMedium),
         cursorColor: Colors.black,
         controller: controller,
+        autovalidateMode: AutovalidateMode.onUserInteraction,
         validator: (value) {
           if (value!.isEmpty) {
             return 'errorEmpty'.tr;
           }
+
           return null;
         },
         onEditingComplete: () {
@@ -56,7 +58,7 @@ class CustomTextField extends StatelessWidget {
               ? null
               : Text(
                   labelName.tr,
-                  maxLines: 5,
+                  maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(color: Colors.grey.shade400, fontFamily: gilroyMedium),
                 ),

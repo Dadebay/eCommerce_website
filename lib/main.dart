@@ -1,4 +1,5 @@
 import 'package:ecommerce_website/app/constants/constants.dart';
+import 'package:ecommerce_website/app/modules/home/views/home_view.dart';
 import 'package:ecommerce_website/app/modules/sign_up/sign_up_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -47,7 +48,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
               bottomSheetTheme: BottomSheetThemeData(backgroundColor: Colors.transparent.withOpacity(0)),
               visualDensity: VisualDensity.adaptivePlatformDensity,
             ),
-            home: SignUpView(),
+            home: const HomeView(),
           );
         });
   }
